@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Maya | Hotel Suites del Mar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/stylePag.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+		<header>
+	        <a href="pagHotel.html" class="">
+	            <img class="imgLogo" src="https://jaddyus.github.io/newsletter/logo-hotel.png" alt="Logo Maya Hoteles">
+	        </a>
+	        <nav class="containerHeader">
+	            <div class="navigation">
+	                <a href="pagHotel.html">Inicio</a>
+	                <a href="misReservas.jsp">Mis reservas</a>
+	                <a href="index.jsp">Cerrar sesión</a>
+	            </div>
+	        </nav>
+	    </header>
+        <main>
+	        <div class="box">
+	            <h1>Hotel Suites del Mar by Maya </h1>
+	            <h2>Un paseo por Alicante, ciudad de corazón mediterráneo.</h2>
+	            <div class="btns">
+	                <a class="boton1" href="misReservas.jsp">Mis
+	                    reservas</a>
+	                <a class="boton2" href="index.jsp">Entra como admin</a>
+	            </div>
+	        </div>
+	        <div class="boxi">
+	            <div>
+	                <img class="mid mt4"
+	                    src="https://dam.melia.com/melia/accounts/f8/4000018/projects/127/assets/16/39087/deb41ff36833fde153586d7965064747-1600782480.jpg?im=RegionOfInterestCrop=(1920,1461),regionOfInterest=(1771.5,1347.0)"
+	                    alt="paisaje1">
+	            </div>
+	            <div>
+	                <img class="mid"
+	                    src="https://dam.melia.com/melia/file/qtECde89Yg71yiKoZLoB.jpg?im=RegionOfInterestCrop=(1920,1280),regionOfInterest=(1771.5,1181.0)"
+	                    alt="paisaje2">
+	            </div>
+	            <div>
+	                <img class="mid mt4"
+	                    src="https://dam.melia.com/melia/file/F6SHMqoC4g21y8Yndw2G.jpg?im=RegionOfInterestCrop=(1920,1440),regionOfInterest=(1476.5,1107.5)"
+	                    alt="paisaje3">
+	            </div>
+	            <div>
+	                <img class="mid"
+	                    src="https://dam.melia.com/melia/accounts/f8/4000018/projects/127/assets/d1/39110/f4483a350e19176402295c62874004e4-1600782480.jpg?im=RegionOfInterestCrop=(1920,1275),regionOfInterest=(1476.5,980.5)"
+	                    alt="paisaje4">
+	            </div>
+	            <div>
+	                <img class="mid mt4"
+	                    src="https://dam.melia.com/melia/accounts/f8/4000018/projects/127/assets/3e/39108/06eb8859c00801e14c9814ff6b550394-1600782480.jpg?im=RegionOfInterestCrop=(1920,2304),regionOfInterest=(984.5,1476.5)"
+	                    alt="paisaje5">
+	            </div>
+	            <div>
+	                <img class="mid"
+	                    src="https://dam.melia.com/melia/file/55aLzTdLgeEXMFMwdHDq.jpg?im=RegionOfInterestCrop=(1920,1280),regionOfInterest=(1771.5,1181.0)"
+	                    alt="paisaje6">
+	            </div>
+	            <div>
+	                <img class="mid mt4"
+	                    src="https://dam.melia.com/melia/file/gFE3Qda4wMeDgMeBu37J.jpg?im=RegionOfInterestCrop=(1920,1440),regionOfInterest=(1771.5,1328.5)"
+	                    alt="paisaje7">
+	            </div>
+	        </div>
+	        <p class="textPHotel">
+            Ubicado muy cerca de la playa del Postiguet y del puerto deportivo de Alicante. Imagina
+            disfrutar de las vistas al mar mientras tomas un baño relajante en la bañera de diseño minimalista de tu
+            habitación. Comienza el día con la energía necesaria saboreando un completo y variado desayuno con
+            impresionantes vistas al Mediterráneo. Y mímate en un moderno spa de más de 400 m2 o date el lujo de
+            relajarte en una increíble piscina exterior.
+        </p>
+            <form class="reservar" action="/ProyectoFinal/CrearReservaServlet" method="post" name="crear_reserva">
+                <fieldset>
+                    <legend>Reserva ya tu habitación</legend>
+                    <p>
+                    <label for="fecha_entrada">Fecha entrada:</label>
+                    <input type="date" id="fecha_entrada" name="fecha_entrada">
+                    </p>
+                    <p>
+                        <label for="fecha_salida">Fecha salida:</label>
+                        <input type="date" id="fecha_salida" name="fecha_salida">
+                    </p>
+                    <p>
+                        <label for="pax">Cantidad personas:</label>
+                        <input type="number" id="pax" name="pax" min="1" max="3">
+                    </p>
+                    <p>
+                        <input type="submit" value="Reservar">
+                    </p>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

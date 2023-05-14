@@ -1,0 +1,314 @@
+@charset "ISO-8859-1";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    min-height: 75px;
+    background-color: rgba(255, 255, 255, 0.142);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 15px -1px rgb(241, 200, 160);
+}
+
+.imgLogo {
+    max-width: 100px;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px;
+    margin-right: 200px;
+}
+
+.navigation a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 0 18px;
+    color: black;
+}
+
+.navigation a:hover {
+    color: rgb(245, 129, 49);
+}
+
+/* FIN HEADER*/
+
+/*BODY*/
+main {
+    margin: 0 200px;
+}
+
+.box {
+    width: 100%;
+    max-width: 1024px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.box h1 {
+    color: rgb(245, 129, 49);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.box h2 {
+    color: rgba(116, 97, 79, 0.847);
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.boton1 {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(245, 129, 49);
+    color: white;
+    font-weight: normal;
+    padding: 18px 30px;
+    margin: 8px;
+    border-radius: 5px;
+    width: 300px;
+    text-decoration: none;
+    margin-top: 60px;
+}
+
+.boton1:hover {
+    opacity: 0.5;
+    font-weight: normal;
+    color: black;
+}
+
+.boton2 {
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    color: rgb(245, 129, 49);
+    font-weight: bold;
+    border: 1px solid rgb(245, 129, 49);
+    padding: 18px 30px;
+    margin-top: 60px;
+    border-radius: 5px;
+    width: 300px;
+    text-decoration: none;
+}
+
+/*Boxi imagenes*/
+.boxi {
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.boxi div {
+    width: 500px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.boxi div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mid {
+    height: 160px;
+    object-fit: cover;
+}
+
+.mt4 {
+    margin-top: 20px;
+}
+
+/*fin boxi imagenes*/
+/*Texto P y Reserva hotel*/
+.textPHotel {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 2;
+    color: #333;
+    margin: 45px 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-left: 5px solid rgb(245, 129, 49);
+    box-shadow: -2px 2px 8px 0px rgba(0, 0, 0, 0.386);
+}
+
+/*recuadro reserva*/
+.reservar {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -2px 2px 8px 0px rgba(0, 0, 0, 0.386);
+    margin-bottom: 50px;
+}
+
+fieldset {
+    border: 1px solid rgb(245, 129, 49);
+    border-radius: 5px;
+    border-color: rgba(245, 127, 49, 0.164);
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(245, 129, 49);
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(241, 200, 160);
+}
+
+input[type="date"],
+input[type="number"],
+input[type="submit"] {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    border: 1px solid rgb(245, 129, 49);
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(245, 129, 49);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.5;
+    color: black;
+}
+
+/*Tablas mis reservas*/
+.reservas-pendientes {
+    width: 100%;
+    max-width: 1024px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.reservas-pendientes h1 {
+    color: rgb(245, 129, 49);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.reservas-pendientes h2 {
+    color: rgba(116, 97, 79, 0.847);
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.reservas-table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.reservas-table td,
+.reservas-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Estilo para la fila de encabezado tabla */
+.reservas-table th {
+    background-color: rgb(245, 129, 49);
+    color: #fff;
+}
+
+/* Estilo para las filas impares tabla */
+.reservas-table tr:nth-child(odd) {
+    background-color: rgb(241, 201, 160);
+}
+
+
+/*Tablas historico reservas*/
+.historico {
+    width: 100%;
+    max-width: 1024px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.historico h2 {
+    color: rgba(116, 97, 79, 0.847);
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.historico table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 100%;
+
+}
+
+/* Estilo para las celdas de la tabla */
+.historico td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+
+}
+
+/* Estilo para la fila de encabezado de la tabla */
+.historico th {
+    background-color: rgb(245, 129, 49);
+    color: #fff;
+}
+
+/* Estilo para las filas impares de la tabla */
+.historico tr:nth-child(odd) {
+    background-color: rgb(241, 201, 160);
+}
+
+/* FIN BODY*/
